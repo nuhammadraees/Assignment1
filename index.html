@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+#header1 {
+    background-color:#69ADCF;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#footer1 {
+    background-color:#69ADCF;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+	
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	
+	<!-- Include the jQuery library -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	
+	<!-- Include the jQuery Mobile library -->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+	<style>
+		img {
+		display: inline-block;
+		}
+	</style>
+	
+	<title>Schoool APPPP</title>
+<head>
+<body>
+	<div data-role="page" id="page">
+		<div data-role="header" id="header1">
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		<div data-role="ui-content">
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible">
+					<h1>Campuses</h1>
+					<ul data-role="listview">
+						<li><a href="#pageIsb" data-transition="flip">Islamabad</a></li>
+						<li><a href="#pageKhr" data-transition="flip">Karachi</a></li>
+						<li><a href="#pagePwr" data-transition="flip">Peshawar</a></li>
+						<li><a href="#pageLhr" data-transition="flip">Lahore</a></li>
+					</ul>
+				</div>
+				
+				<div data-role="main" class="ui-content">
+					<ul data-role="listview">
+						<li><a href="#pageAd" data-transition="turn">Admissions</a></li>
+					</ul>
+				</div>				
+				<div data-role="collapsible">
+					<h1>Departments</h1>
+					<ul data-role="listview">
+						<li><a href="#pageCs" data-transition="flip">Computer Science</a></li>
+						<li><a href="#pageEE" data-transition="flip">Electrical Engineering</a></li>
+						<li><a href="#pageMG" data-transition="flip">Management</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+	
+	
+<div data-role="page" data-dialog="true" id="pageAd">
+  <div data-role="header" id="header1">
+    <h1><img src="logo.png" align="left" height="50px" width="50px">Admissions News</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+    <p><b>Latest:</b> The admission will be start from the 25/25/2015.</p>
+	<a href="#page">Go back</a>
+  </div>
+
+  <div data-role="footer" id="footer1">
+    <h1>All rights reserved</h1>
+  </div>
+</div> 
+
+	<div data-role="page" id="pageIsb">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		<div data-role="ui-content">
+			<p align="center"><a href="geo:33.6566398,73.0165118?z=11&q=FAST+National+University+of+Computer+and+Emerging+Sciences+Islamabad">Islamabad</a></p>
+		</div>
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>		
+	
+	<div data-role="page" id="pageKhr">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		<div data-role="ui-content">
+			<p align="center"><a href="geo:24.8635045,67.2173113?z=11&q=FAST+National+University+of+Computer+and+Emerging+Sciences+Karachi">Karachi</a></p>			 
+		</div>
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+
+		<div data-role="page" id="pageLhr">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+			<div data-role="ui-content">
+				
+			<p align="center"><a href="geo:31.4810656,74.3047827?z=11&q=FAST+National+University+of+Computer+and+Emerging+Sciences+Lahore">Lahore</a></p>
+			</div>
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+
+		<div data-role="page" id="pagePwr">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+			<div data-role="ui-content">
+			<p align="center"><a href="geo:33.980465,71.427183?z=11&q=FAST+National+University+of+Computer+and+Emerging+Sciences+Peshawar">Peshawar</a></p>
+			</div>
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+	<div data-role="page" id="pageCs">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+				<h2>Computer Science</h2>
+					<div data-role="collapsible">
+						<h4>BS</h4>
+						<p>Our <b>BS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>MS</h4>
+							<p>Our <b>MS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>PhD</h4>
+							<p>Our <b>PhD</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>					
+					</div>
+		</div>
+			
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+		<div data-role="page" id="pageEE">
+		<div data-role="header" id="header1">
+		
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+				<h2>Electrical Engineering</h2>
+					<div data-role="collapsible">
+						<h4>BS</h4>
+						<p>Our <b>BS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>MS</h4>
+							<p>Our <b>MS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>PhD</h4>
+							<p>Our <b>PhD</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>					
+					</div>
+		</div>
+			
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+	
+		<div data-role="page" id="pageMG">
+		<div data-role="header" id="header1">
+			
+			<a href="#page" class="ui-btnui-icon-home ui-btn-icon-left">Home</a>
+			<h1><img src="logo.png" align="center" height="50px" width="50px">NUCES-FAST</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+				<h2>Management</h2>
+					<div data-role="collapsible">
+						<h4>BS</h4>
+						<p>Our <b>BS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>MS</h4>
+							<p>Our <b>MS</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>
+					</div>
+
+					<div data-role="collapsible">
+						<h4>PhD</h4>
+							<p>Our <b>PhD</b> program in Computer Sciences concentrates on programming skills in a variety of paradigms, operating systems, networking and databases. Hands on experience with various software systems, C, C++, JAVA, Visual Programming languages, Unix, Windows and Network tools are an integral part of the program. In addition, the present curriculum covers Mathematics, Basic Sciences, Humanities, Social Sciences, and English language skills. The Computer Science program offers an opportunity for fieldwork outside the university.</p>					
+					</div>
+		</div>
+			
+		<div data-role="footer" id="footer1">
+			<h4>All rights reserved</h4>
+		</div>
+	</div>
+	
+</body>
+</html>
